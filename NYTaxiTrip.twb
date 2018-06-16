@@ -194,6 +194,21 @@
       <column caption='trip_durationMinute' datatype='real' name='[Calculation_347340130972073985]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='// trip_duration seconds to minutes&#13;&#10;[trip_duration]/60' />
       </column>
+      <column aggregation='Avg' caption='dropoff_lat' datatype='real' name='[Calculation_347340130977636354]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative'>
+        <calculation class='tableau' formula='// convert string to float (lat)&#13;&#10;FLOAT([dropoff_latitude])' />
+      </column>
+      <column aggregation='Avg' caption='dropoff_long' datatype='real' name='[Calculation_347340130977902595]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative'>
+        <calculation class='tableau' formula='// convert string to long&#13;&#10;FLOAT([dropoff_longitude])' />
+      </column>
+      <column aggregation='Avg' caption='pickup_lat' datatype='real' name='[Calculation_347340130978074628]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative'>
+        <calculation class='tableau' formula='// Convert string to lat&#13;&#10;FLOAT([pickup_latitude])' />
+      </column>
+      <column aggregation='Avg' caption='pickup_long' datatype='real' name='[Calculation_347340130978222085]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative'>
+        <calculation class='tableau' formula='// Convert string to long&#13;&#10;FLOAT([pickup_longitude])' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[EuclidianDistance (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Calculation_347340130979344390]' peg='0' size='1' />
+      </column>
       <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
         <calculation class='tableau' formula='1' />
       </column>
