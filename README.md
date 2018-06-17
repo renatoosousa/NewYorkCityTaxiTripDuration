@@ -105,4 +105,15 @@ Here I begin to believe that the `id=2` vendor has more cars than the second ven
 ##### Best Trips Map
 So far we do not know for sure why one supplier always has more trips than another. But now we will show an iterative map that helps the supplier who always makes fewer trips to find the best trips.
 
-Here according to the day and time, it is possible to choose between long and short distance journeys and trips with long or short duration. Defining these variables, the map will show points where they are most likely to find trips with such characteristics.
+Here, according to the day and time, it is possible to choose the locations most likely for each setting. For example, if the vendor wants to enjoy trips with intermediate distances and that it spends little time, just mark the desired options.
+
+In addition to time and day, the following options are available:
+
+Distance:
+* Intermediate Distance (`>20km`)
+* Long Distance (`>10km` and `<=20km`)
+* Short Distance (`<=10km`)
+
+Time:
+* Long Trip (`>15 min`)
+* Short Trip (`<=15min`)
