@@ -66,9 +66,13 @@ By visualizing the distribution it is possible to conclude that journeys with an
 ##### Latitude and Longitude
 Based on the latitude and longitude distribution (for pickup and dropoff), a filter was created.
 First, new Categories like `PickupLatCategory`, `PickupLongCategory`, `DropoffLatCategory` and `DropoffLongCategory`.
-Without this filter, we can see points outside of New York (even in the ocean)
+Without this filter, we can see points outside of New York (even in the ocean).
+
+![dataClean](/imgs/MapFilterViz.png)
 
 #### Pickup points VS Dropoff points
+![dataClean](/imgs/PickupDropff.png)
+
 Here we can see pickup points (top map) and dropoff points (bottom map).
 In both maps, Manhattan seems to have the same density of points (by the way, a high density). There are two other dots with high densities. When investigating important locations near this large cluster of points, we find *John F. Kennedy International Airport* and *LaGuardia Airport*.
 
@@ -76,6 +80,8 @@ Another issue that we can observe is that the dropoff points are more distribute
 
 #### Dynamics of the City
 In this section we can infer how New Yorkers behave during the days of the week and at different hours, based on the average speed and the amount of taxi trips per day of the week.
+
+![dataClean](/imgs/Average Speed.png)
 ##### Average Speed per Weekday and Hour
 Here we can visualize traffic behavior on several days of the week and at different times. We can see that on weekdays, during business hours the average speed is very low. But before starting and at the end of business hours, we can observe higher average speeds (at these times, most people are at home).
 On weekends, low average speed times occur later, as people wake up later on these days. And even at times with lower speeds, they are still higher than on weekdays, because on those days the traffic is less congested due to the fact that most people prefer to rest at home.
@@ -85,7 +91,9 @@ Here, for each day of the week we can see the amount of taxi trips made for each
 **Weekends** behave as described in the previous subsection: They start the day by decreasing the amount of travel (but they start with values ​​much larger than the weekdays and take longer descending), the time that they begin to grow is later (the people sleep a little more on those days), during the rest of the day the saturday continues to grow and sunday has a drop at the end of the day (the next day is a working day).
 
 #### Increasing Vendor Trips
-From `vendor_id` we will study the distribution of travel by company
+From `vendor_id` we will study the distribution of travel by company.
+
+![dataClean](/imgs/Increase.png)
 ##### Number of Vendor Trip per Month and Hour of Day
 Here, we have two graphs.
 
