@@ -81,6 +81,18 @@ weekday and weekend.
 ##### Frequency of Trips per Weekday and Hour
 Here, for each day of the week we can see the amount of taxi trips made for each time of day. **Weekdays** behave very similarly: they start the day by decreasing the amount of travel, it grows with the beginning of business hours, it keeps up during the day, it increases a little with the end of business hours and it falls at the end of the night. One notable exception is the friday, which at the end of the day behaves like saturday, since for most people the next day is not working day.
 **Weekends** behave as described in the previous subsection: They start the day by decreasing the amount of travel (but they start with values ​​much larger than the weekdays and take longer descending), the time that they begin to grow is later (the people sleep a little more on those days), during the rest of the day the saturday continues to grow and sunday has a drop at the end of the day (the next day is a working day).
+
 #### Increasing Vendor Trips
-##### Vendor Study
+From `vendor_id` we will study the distribution of travel by company
+##### Number of Vendor Trip per Month and Hour of Day
+Here, we have two graphs.
+
+In the first graph (left graphic) we can see that the vendor of `id=2` has more trips in every month than the vendor of `id=1`. Does this imply that one supplier has more cars than the other?
+
+In the second graph (right graph) we can see that the vendor of `id=2` also has more trips or is the same as the provider of `id=1` at almost all times of the day.
+Here I begin to believe that the `id=2` vendor has more cars than the second vendor.
+
 ##### Best Trips Map
+So far we do not know for sure why one supplier always has more trips than another. But now we will show an iterative map that helps the supplier who always makes fewer trips to find the best trips.
+
+Here according to the day and time, it is possible to choose between long and short distance journeys and trips with long or short duration. Defining these variables, the map will show points where they are most likely to find trips with such characteristics.
