@@ -1,10 +1,20 @@
-# NewYorkCityTaxiTripDuration
+# New York City Taxi Trip Duration
 This repository contains the analysis and visualizations I have created in my first Tableau project.
 
-
 #### About
+This project contains the entire study on the chosen database, the reason for each graphical representation and also what conclusion was obtained.
+
+Topics covered:
+* Feature engineering
+* Data cleaning
+* Feature relations
 
 #### Dataset
+
+#### Feature Engineering
+##### Distance
+##### Average Speed
+##### Categories
 
 #### Data Cleaning
 ##### Trip Duration
