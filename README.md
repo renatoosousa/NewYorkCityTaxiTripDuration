@@ -33,6 +33,8 @@ In the next section, I will explain better the choice of each threshold.
 
 #### Data Cleaning
 In this section, I explain how I filtered data that did not look right. After analyzing outliers, global filters are defined (for everyone who uses this database).
+
+![dataClean](/imgs/DataCleaning.png)
 ##### Trip Duration
 when analyzing the distribution of trips by duration, we can find trips with more than `600 minutes` (`10 hours`) and others with `0 minutes`. To delete this unusual data, a category has been created `TripDurationCategory`:
 ```
