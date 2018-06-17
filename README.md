@@ -24,7 +24,7 @@ Categories have been created to make it easier to create iterative filters. An e
 ```
 IF [dropoff_lat] > 41.4
 THEN "Out"
-ELSEIF [dropoff_lat] < 40,630
+ELSEIF [dropoff_lat] < 40.630
 THEN "Out"
 ELSE "In"
 END
@@ -34,7 +34,7 @@ In the next section, I will explain better the choice of each threshold.
 #### Data Cleaning
 In this section, I explain how I filtered data that did not look right. After analyzing outliers, global filters are defined (for everyone who uses this database).
 ##### Trip Duration
-when analyzing the distribution of trips by duration, we can find trips with more than 600 minutes (10 hours) and others with 0 minutes. To delete this unusual data, a category has been created `TripDurationCategory`:
+when analyzing the distribution of trips by duration, we can find trips with more than `600 minutes` (`10 hours`) and others with `0 minutes`. To delete this unusual data, a category has been created `TripDurationCategory`:
 ```
 IF [trip_durationMinute] > 180
 THEN 'Invalid Trip'
@@ -43,7 +43,7 @@ THEN "Invalid Trip"
 ELSE "Valid Trip"
 END
 ```
-*Obs: 180 minutes in a taxi trip sounds like a lot, but we need to find a value to limit superiorly*
+*Obs: `180 minutes` in a taxi trip sounds like a lot, but we need to find a value to limit superiorly*
 And from this new category, a new filter was created.
 ##### Passenger
 When we visualize the distribution of passenger numbers, we can observe trips with no passengers until traveling with 8 passengers (possibly an error).
@@ -55,7 +55,7 @@ So the maximum of passengers on a taxi ride is 6 passengers. Obviously, the mini
 ##### Distance
 To check if the calculated distance is correct, the best way to analyze was to visualize the Trip Duration by Distance graph. As expected, we can see a linear proportion between the two variables (the greater the distance covered, the longer the time spent). A certain noise is also observed, as well as unexpected values, but I believe it is due to the approximation of the calculation of the distance and the traffic in more agitated moments.
 
-We can also see trips with 0km and more than 300km. A filter was created to only take trips with more than 1km and less than 60km
+We can also see trips with `0km` and more than `300km`. A filter was created to only take trips with more than `1km` and less than `60km`.
 
 ##### Average Speed
 Here we can observe the distribution of average speeds (most less or equal to `20km/h`). Here we can also observe, trips with average speed over `200km/h` so it is clear that we need to filter trips with values so unexpected.
