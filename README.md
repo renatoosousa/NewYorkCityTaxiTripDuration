@@ -1,6 +1,8 @@
 # New York City Taxi Trip Duration
 This repository contains the analysis and visualizations I have created in my first Tableau project.
 
+If you feel better, you can view the [project here](https://public.tableau.com/profile/renato.sousa#!/vizhome/NewYorkCityTaxiTripDuration/NewYorkTaxiTrip).
+
 #### About
 This project contains the entire study on the chosen database, the reason for each graphical representation and also what conclusion was obtained.
 
