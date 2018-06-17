@@ -68,10 +68,10 @@ Based on the latitude and longitude distribution (for pickup and dropoff), a fil
 First, new Categories like `PickupLatCategory`, `PickupLongCategory`, `DropoffLatCategory` and `DropoffLongCategory`.
 Without this filter, we can see points outside of New York (even in the ocean).
 
-![dataClean](/imgs/MapFilterViz.png)
+![MapFilterViz](/imgs/MapFilterViz.png)
 
 #### Pickup points VS Dropoff points
-![dataClean](/imgs/PickupDropff.png)
+![PickupDropoff](/imgs/PickupDropoff.png)
 
 Here we can see pickup points (top map) and dropoff points (bottom map).
 In both maps, Manhattan seems to have the same density of points (by the way, a high density). There are two other dots with high densities. When investigating important locations near this large cluster of points, we find *John F. Kennedy International Airport* and *LaGuardia Airport*.
@@ -81,7 +81,7 @@ Another issue that we can observe is that the dropoff points are more distribute
 #### Dynamics of the City
 In this section we can infer how New Yorkers behave during the days of the week and at different hours, based on the average speed and the amount of taxi trips per day of the week.
 
-![dataClean](/imgs/Average Speed.png)
+![AverageSpeed](/imgs/AverageSpeed.png)
 ##### Average Speed per Weekday and Hour
 Here we can visualize traffic behavior on several days of the week and at different times. We can see that on weekdays, during business hours the average speed is very low. But before starting and at the end of business hours, we can observe higher average speeds (at these times, most people are at home).
 On weekends, low average speed times occur later, as people wake up later on these days. And even at times with lower speeds, they are still higher than on weekdays, because on those days the traffic is less congested due to the fact that most people prefer to rest at home.
