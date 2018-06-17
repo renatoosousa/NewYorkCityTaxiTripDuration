@@ -3,6 +3,8 @@ This repository contains the analysis and visualizations I have created in my fi
 
 If you feel better, you can view the [project here](https://public.tableau.com/profile/renato.sousa#!/vizhome/NewYorkCityTaxiTripDuration/NewYorkTaxiTrip).
 
+The project is also present in this repository in `NYTaxiTrip.twb`.
+
 #### About
 This project contains the entire study on the chosen database, the reason for each graphical representation and also what conclusion was obtained.
 
